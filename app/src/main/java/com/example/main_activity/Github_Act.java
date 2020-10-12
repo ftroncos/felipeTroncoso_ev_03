@@ -40,6 +40,8 @@ public class Github_Act extends AppCompatActivity {
                 int Pfarenheith = Integer.parseInt(plibros.getFarenheith());
                 int Previval = Integer.parseInt(plibros.getRevival());
                 int Palquimista = Integer.parseInt(plibros.getAlquimista());
+                int Ppoder = Integer.parseInt(plibros.getPoder());
+                int Pdespertar = Integer.parseInt(plibros.getDespertar());
 
                 if(libro.equals("Farenheith"))
                 {
@@ -52,6 +54,14 @@ public class Github_Act extends AppCompatActivity {
                 if(libro.equals("El Alquimista"))
                 {
                     text.setText("El valor de El Alquimista es: " + Palquimista);
+                }
+                if(libro.equals("El Poder"))
+                {
+                    text.setText("El valor de El Poder es: " + Ppoder);
+                }
+                if(libro.equals("Despertar"))
+                {
+                    text.setText("El precio de Despertar es: " + Pdespertar);
                 }
             }
 

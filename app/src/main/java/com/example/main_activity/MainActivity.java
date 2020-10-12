@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ProgressBar pb;
+    private ProgressBar pbr;
     private Button btn;
 
     @Override
@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pb = (ProgressBar)findViewById(R.id.pb);
+        pbr = (ProgressBar)findViewById(R.id.pb);
         btn = (Button)findViewById(R.id.btn);
 
-        pb.setVisibility(View.INVISIBLE);
+        pbr.setVisibility(View.INVISIBLE);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     class Task extends AsyncTask<String, Void, String>{
         @Override
-        protected void onPreExecute() {pb.setVisibility(View.VISIBLE);}
+        protected void onPreExecute() {pbr.setVisibility(View.VISIBLE);}
 
         @Override
         protected String doInBackground(String... strings) {
